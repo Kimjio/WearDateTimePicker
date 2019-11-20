@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="confirm_button_size">98dp</dimen>
+    <dimen name="confirm_button_radius">49dp</dimen>
+    <dimen name="picker_text_size">58sp</dimen>
+    <dimen name="picker_small_text_size">36sp</dimen>
+    <dimen name="teaser_center_offset">8dp</dimen>
+</resources>

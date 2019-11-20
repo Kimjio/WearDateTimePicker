@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="confirm_button_size">90dp</dimen>
+    <dimen name="confirm_button_radius">45dp</dimen>
+    <dimen name="picker_text_size">50sp</dimen>
+    <dimen name="picker_small_text_size">28sp</dimen>
+    <dimen name="picker_column_width">196dp</dimen>
+    <dimen name="picker_min_height">194dp</dimen>
+    <dimen name="teaser_center_offset">6dp</dimen>
+</resources>

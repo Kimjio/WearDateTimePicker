@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.wearable.view.WearableListView
+        android:id="@+id/first_picker"
+        android:scrollbars="none"
+        android:layout_width="@dimen/picker_column_width"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp" />
+
+    <android.support.wearable.view.WearableListView
+        android:id="@+id/second_picker"
+        android:scrollbars="none"
+        android:layout_width="@dimen/picker_column_width"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp" />
+
+    <android.support.wearable.view.WearableListView
+        android:id="@+id/third_picker"
+        android:scrollbars="none"
+        android:layout_width="@dimen/picker_column_width"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp" />
+
+    <android.support.wearable.view.CircledImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/check"
+        android:layout_width="@dimen/confirm_button_size"
+        android:layout_height="@dimen/confirm_button_size"
+        android:src="@drawable/ic_arrow_forward"
+        app:circle_color="@color/btn_colored_background_material"
+        app:circle_radius="@dimen/confirm_button_radius" />
+</merge>
