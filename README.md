@@ -2,24 +2,22 @@
 DateTimePicker for Wear OS (from Wear OS Settings)
 
 #### DatePicker
-![Original DatePiker](image/date_picker_google.gif)
-
 Original (Wear OS Settings)
 
+![Original DatePiker](image/date_picker_google.gif)
+
+Library
 
 ![DatePicker](image/date_picker.gif)
 
-Library
-
 #### TimePicker
-![Original TimePiker](image/time_picker_google.gif)
-
 Original (Wear OS Settings)
 
-
-![TimePicker](image/time_picker.gif)
+![Original TimePiker](image/time_picker_google.gif)
 
 Library
+
+![TimePicker](image/time_picker.gif)
 
 ## Usage
 
@@ -62,3 +60,5 @@ new TimePickerDialog(/* context */ this, /* 24 hours */ true)
 ````
 
 #### TODO
+WearableListView to WearableRecyclerView
+xml attrs
