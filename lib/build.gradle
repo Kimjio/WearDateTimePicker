@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 29
@@ -24,6 +26,26 @@ android {
 
 }
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'WearDateTimePicker'
+
+    publishedGroupId = 'com.kimjio'
+    libraryName = 'WearDateTimePicker'
+    artifact = 'weardatetimepicker'
+
+    libraryDescription = 'DateTimePicker for Wear OS (from Wear OS Settings)'
+
+    siteUrl = 'https://github.com/Kimjio/WearDateTimePicker'
+    gitUrl = 'https://github.com/Kimjio/WearDateTimePicker.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'kimji'
+    developerName = 'Ji O Kim'
+    developerEmail = 'kimjioh0927@gmail.com'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -33,4 +55,62 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+group = publishedGroupId
+version = libraryVersion
+
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            packaging 'aar'
+            groupId publishedGroupId
+            artifactId artifact
+
+            name libraryName
+            description libraryDescription
+            url siteUrl
+
+            developers {
+                developer {
+                    id developerId
+                    name developerName
+                    email developerEmail
+                }
+            }
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray {
+    //On local.properties
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+
+    configurations = ['archives']
+    pkg {
+        repo = bintrayRepo
+        name = bintrayName
+        desc = libraryDescription
+        websiteUrl = siteUrl
+        dryRun = false
+        publish = true
+        override = false
+        publicDownloadNumbers = true
+        version {
+            desc = libraryDescription
+        }
+    }
 }

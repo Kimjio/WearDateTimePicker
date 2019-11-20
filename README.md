@@ -21,6 +21,13 @@ Library
 
 ## Usage
 
+#### Gradle (build.gradle)
+````groovy
+dependencies {
+    implementation 'com.kimjio:weardatetimepicker:1.0'
+}
+````
+
 #### Dialog
 ````java
 //DatePicker
@@ -61,4 +68,5 @@ new TimePickerDialog(/* context */ this, /* 24 hours */ true)
 
 #### TODO
 WearableListView to WearableRecyclerView
+
 xml attrs
