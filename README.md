@@ -2,20 +2,24 @@
 DateTimePicker for Wear OS (from Wear OS Settings)
 
 #### DatePicker
-Original (Wear OS Settings)
 ![Original DatePiker](image/date_picker_google.gif)
 
-Library
+Original (Wear OS Settings)
+
+
 ![DatePicker](image/date_picker.gif)
 
+Library
 
 #### TimePicker
+![Original TimePiker](image/time_picker_google.gif)
+
 Original (Wear OS Settings)
-![Original DatePiker](image/time_picker_google.gif)
+
+
+![TimePicker](image/time_picker.gif)
 
 Library
-![DatePicker](image/time_picker.gif)
-
 
 ## Usage
 
