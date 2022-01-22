@@ -67,6 +67,8 @@ new TimePickerDialog(/* context */ this, /* 24 hours */ true)
 ````
 
 #### TODO
+Wear OS 3 design
+
 WearableListView to WearableRecyclerView
 
 xml attrs
